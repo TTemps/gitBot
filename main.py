@@ -118,7 +118,7 @@ def main():
             "Aucune modification depuis le dernier commit. Le commit n'a pas été effectué."
         )
     else:
-        print(commit_message)
+        print("Print avant commit : " + commit_message)
         create_commit(commit_message)
     return
 

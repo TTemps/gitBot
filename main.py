@@ -40,7 +40,7 @@ def create_commit(commit_message):
         print("Commit effectué avec succès!")
     else:
         print(
-            "Aucune modification depuis le dernier commit. Le commit n'a pas été effectué."
+            "AsAucune modification depuis le dernier commit. Le commit n'a pas été effectué."
         )
 
 

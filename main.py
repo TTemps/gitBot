@@ -76,6 +76,14 @@ def get_last_line_files(file_path):
     return last_line
 
 
+def initialize_message_file():
+    if not os.path.exists("message.txt"):
+        print("Initialisation du fichier 'message.txt'.")
+        with open("message.txt", "w") as file:
+            file.write("Initialisation du fichier 'message.txt'.")
+        create_commit("Initialisation du fichier 'message.txt'.")
+
+
 def main():
     days_left = get_days_until_new_year()
     commit_message = f"Commit {get_number_days_year()-days_left+1}/{get_number_days_year()} : {days_left} days left"
@@ -98,12 +106,6 @@ def main():
                     "utf-8"
                 )
                 break
-
-        if last_line_message_txt.strip() == "":
-            print("Initialisation du fichier 'message.txt'.")
-            create_commit("Initialisation du fichier 'message.txt'.")
-            main()
-            return
 
         last_commit_lines = last_commit_content.splitlines()
         last_commit_last_line = (

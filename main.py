@@ -98,15 +98,31 @@ def main():
                     "utf-8"
                 )
                 break
+
+        if last_line_message_txt.strip() == "":
+            print("Initialisation du fichier 'message.txt'.")
+            create_commit("Initialisation du fichier 'message.txt'.")
+            main()
+            return
+
         last_commit_lines = last_commit_content.splitlines()
-        last_commit_last_line = last_commit_lines[-1]
-        if last_line_message_txt == last_commit_last_line:
+        last_commit_last_line = (
+            last_commit_lines[-1].strip() if last_commit_lines else None
+        )
+
+        # Vérifier si le contenu du fichier est vide
+        if not last_line_message_txt.strip():
+            print("Le fichier 'message.txt' est vide. Le commit n'a pas été effectué.")
+            return
+
+        if last_line_message_txt.strip() == last_commit_last_line:
             print(
                 "Aucune modification depuis le dernier commit. Le commit n'a pas été effectué."
             )
             return
     print(commit_message)
     create_commit(commit_message)
+    return
 
 
 if __name__ == "__main__":

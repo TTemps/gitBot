@@ -83,7 +83,7 @@ def initialize_message_file():
     if not os.path.exists("message.txt"):
         print("Initialisation du fichier 'message.txt'.")
         with open("message.txt", "w") as file:
-            file.write("Initialisation du fichier 'message.txt'.")
+            file.write("Initialisation du fichier 'message.txt'.\n")
         initialized = True
 
     # Ajouter le message initial même si le fichier est vide
@@ -92,7 +92,7 @@ def initialize_message_file():
         if not content.strip() and not initialized:
             print("Ajout du message initial dans 'message.txt'.")
             with open("message.txt", "w") as file:
-                file.write("Initialisation du fichier 'message.txt'.")
+                file.write("Initialisation du fichier 'message.txt'.\n")
 
     if initialized:
         create_commit("Initialisation du fichier 'message.txt'.\n")

@@ -110,9 +110,6 @@ def is_file_content_identical(file_path, content):
 
 
 def main():
-    # Initialiser le fichier "message.txt" s'il est vide ou inexistant
-    initialize_message_file()
-
     days_left = get_days_until_new_year()
     commit_message = f"Commit {get_number_days_year()-days_left+1}/{get_number_days_year()} : {days_left} days left"
 
@@ -132,4 +129,6 @@ def main():
 
 
 if __name__ == "__main__":
+    # Initialiser le fichier "message.txt" s'il est vide ou inexistant
+    initialize_message_file()
     main()

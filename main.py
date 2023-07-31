@@ -64,6 +64,18 @@ def get_number_days_year():
     return total_day
 
 
+def get_last_line_files(file_path):
+    with open(file_path, "rb") as f:
+        try:  # catch OSError in case of a one line file
+            f.seek(-2, os.SEEK_END)
+            while f.read(1) != b"\n":
+                f.seek(-2, os.SEEK_CUR)
+        except OSError:
+            f.seek(0)
+        last_line = f.readline().decode()
+    return last_line
+
+
 def main():
     days_left = get_days_until_new_year()
     commit_message = f"Commit {get_number_days_year()-days_left+1}/{get_number_days_year()} : {days_left} days left"
@@ -76,14 +88,23 @@ def main():
     if os.path.exists(".git"):
         repo = Repo(".")
         last_commit = repo.head.commit
-        last_commit_content = last_commit.tree.blobs[0].data.decode("utf-8")
-        with open(__file__, "r") as file:
-            current_content = file.read()
-            if current_content == last_commit_content:
-                print(
-                    "Aucune modification depuis le dernier commit. Le commit n'a pas été effectué."
+        last_line_message_txt = get_last_line_files("message.txt")
+
+        last_commit_content = None
+        for item in last_commit.tree.traverse():
+            if item.path == "message.txt":
+                last_commit_blob = item
+                last_commit_content = last_commit_blob.data_stream.read().decode(
+                    "utf-8"
                 )
-                return
+                break
+        last_commit_lines = last_commit_content.splitlines()
+        last_commit_last_line = last_commit_lines[-1]
+        if last_line_message_txt == last_commit_last_line:
+            print(
+                "Aucune modification depuis le dernier commit. Le commit n'a pas été effectué."
+            )
+            return
     print(commit_message)
     create_commit(commit_message)
 

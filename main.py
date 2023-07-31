@@ -78,11 +78,24 @@ def get_last_line_files(file_path):
 
 
 def initialize_message_file():
+    initialized = False
+
     if not os.path.exists("message.txt"):
         print("Initialisation du fichier 'message.txt'.")
         with open("message.txt", "w") as file:
             file.write("Initialisation du fichier 'message.txt'.")
-        create_commit("Initialisation du fichier 'message.txt'.")
+        initialized = True
+
+    # Ajouter le message initial même si le fichier est vide
+    with open("message.txt", "r") as file:
+        content = file.read()
+        if not content.strip() and not initialized:
+            print("Ajout du message initial dans 'message.txt'.")
+            with open("message.txt", "w") as file:
+                file.write("Initialisation du fichier 'message.txt'.")
+
+    if initialized:
+        create_commit("Initialisation du fichier 'message.txt'.\n")
 
 
 def is_file_content_identical(file_path, content):

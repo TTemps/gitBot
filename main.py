@@ -117,6 +117,11 @@ def main():
     for holiday_date, holiday_message in holidays:
         if datetime.date.today() == holiday_date:
             commit_message += holiday_message
+
+    print("Contenu actuel : " + commit_message)
+    last_line_message_txt = get_last_line_files("message.txt")
+    print("Contenu du dernier commit : " + last_line_message_txt)
+
     # Vérifier si le contenu du fichier est identique au dernier commit
     if is_file_content_identical("message.txt", commit_message):
         print(
@@ -125,10 +130,10 @@ def main():
     else:
         print("Print avant commit : " + commit_message)
         create_commit(commit_message)
+
     return
 
 
 if __name__ == "__main__":
-    # Initialiser le fichier "message.txt" s'il est vide ou inexistant
-    initialize_message_file()
-    main()
+    initialize_message_file()  # Initialiser le fichier message.txt si nécessaire
+    main()  # Exécuter le script principal

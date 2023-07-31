@@ -84,6 +84,22 @@ def initialize_message_file():
         create_commit("Initialisation du fichier 'message.txt'.")
 
 
+def is_file_content_identical(file_path, content):
+    if not os.path.exists(".git"):
+        return False
+
+    repo = Repo(".")
+    last_commit = repo.head.commit
+
+    for item in last_commit.tree.traverse():
+        if item.path == file_path:
+            last_commit_blob = item
+            last_commit_content = last_commit_blob.data_stream.read().decode("utf-8")
+            return content.strip() == last_commit_content.strip()
+
+    return False
+
+
 def main():
     days_left = get_days_until_new_year()
     commit_message = f"Commit {get_number_days_year()-days_left+1}/{get_number_days_year()} : {days_left} days left"
@@ -93,37 +109,13 @@ def main():
         if datetime.date.today() == holiday_date:
             commit_message += holiday_message
     # Vérifier si le contenu du fichier est identique au dernier commit
-    if os.path.exists(".git"):
-        repo = Repo(".")
-        last_commit = repo.head.commit
-        last_line_message_txt = get_last_line_files("message.txt")
-
-        last_commit_content = None
-        for item in last_commit.tree.traverse():
-            if item.path == "message.txt":
-                last_commit_blob = item
-                last_commit_content = last_commit_blob.data_stream.read().decode(
-                    "utf-8"
-                )
-                break
-
-        last_commit_lines = last_commit_content.splitlines()
-        last_commit_last_line = (
-            last_commit_lines[-1].strip() if last_commit_lines else None
+    if is_file_content_identical("message.txt", commit_message):
+        print(
+            "Aucune modification depuis le dernier commit. Le commit n'a pas été effectué."
         )
-
-        # Vérifier si le contenu du fichier est vide
-        if not last_line_message_txt.strip():
-            print("Le fichier 'message.txt' est vide. Le commit n'a pas été effectué.")
-            return
-
-        if last_line_message_txt.strip() == last_commit_last_line:
-            print(
-                "Aucune modification depuis le dernier commit. Le commit n'a pas été effectué."
-            )
-            return
-    print(commit_message)
-    create_commit(commit_message)
+    else:
+        print(commit_message)
+        create_commit(commit_message)
     return
 
 

@@ -94,12 +94,12 @@ def is_file_content_identical(file_path, content):
     for item in last_commit.tree.traverse():
         if item.path == file_path:
             last_commit_blob = item
-            last_commit_content = last_commit_blob.data_stream.read().decode("utf-8")
-            print(
-                "contenu actuel : " + content.strip(),
-                "\ncontenu du last : " + last_commit_content.strip(),
-            )
-            return content.strip() == last_commit_content.strip()
+            with open(file_path, "r") as file:
+                current_content = file.read()
+
+            last_blob_hash = last_commit_blob.binsha.hex()
+            current_blob_hash = repo.hash_object(current_content.encode())
+            return last_blob_hash == current_blob_hash
 
     return False
 

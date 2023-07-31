@@ -7,6 +7,7 @@ def create_commit(commit_message):
     repo = Repo(".")
     index = repo.index
     # Inclure tous les fichiers modifiés dans l'index
+    add_commit_message_to_file("message.txt", commit_message)
     index.add(["message.txt"])
 
     # Effectuer le commit avec le message de commit et les fichiers modifiés
@@ -14,6 +15,11 @@ def create_commit(commit_message):
 
     origin = repo.remote(name="origin")
     origin.push()
+
+
+def add_commit_message_to_file(filename, commit_message):
+    with open(filename, "a") as file:
+        file.write(f"{commit_message}\n")
 
 
 def get_days_until_new_year():
@@ -40,4 +46,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

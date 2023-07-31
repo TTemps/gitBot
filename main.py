@@ -95,7 +95,10 @@ def is_file_content_identical(file_path, content):
         if item.path == file_path:
             last_commit_blob = item
             last_commit_content = last_commit_blob.data_stream.read().decode("utf-8")
-            print(content.strip(), last_commit_content.strip())
+            print(
+                "contenu actuel : " + content.strip(),
+                "\ncontenu du last : " + last_commit_content.strip(),
+            )
             return content.strip() == last_commit_content.strip()
 
     return False

@@ -33,8 +33,15 @@ def create_commit(commit_message):
     # Effectuer le commit avec le message de commit et les fichiers modifiés
     index.commit(commit_message)
 
-    origin = repo.remote(name="origin")
-    origin.push()
+    # Vérifier si le contenu du fichier est identique au dernier commit
+    if repo.is_dirty():
+        origin = repo.remote("origin")
+        origin.push()
+        print("Commit effectué avec succès!")
+    else:
+        print(
+            "Aucune modification depuis le dernier commit. Le commit n'a pas été effectué."
+        )
 
 
 def add_commit_message_to_file(filename, commit_message):
@@ -65,7 +72,18 @@ def main():
     for holiday_date, holiday_message in holidays:
         if datetime.date.today() == holiday_date:
             commit_message += holiday_message
-
+    # Vérifier si le contenu du fichier est identique au dernier commit
+    if os.path.exists(".git"):
+        repo = Repo(".")
+        last_commit = repo.head.commit
+        last_commit_content = last_commit.tree.blobs[0].data.decode("utf-8")
+        with open(__file__, "r") as file:
+            current_content = file.read()
+            if current_content == last_commit_content:
+                print(
+                    "Aucune modification depuis le dernier commit. Le commit n'a pas été effectué."
+                )
+                return
     print(commit_message)
     create_commit(commit_message)
 

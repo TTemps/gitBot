@@ -1,6 +1,7 @@
 from git import Repo
 import os
 import datetime
+from io import BytesIO
 
 # Liste des fêtes avec les messages correspondants
 holidays = [
@@ -91,20 +92,14 @@ def is_file_content_identical(file_path, content):
     repo = Repo(".")
     last_commit = repo.head.commit
 
-    for item in last_commit.tree.traverse():
-        if item.path == file_path:
-            last_commit_blob = item
-            with open(file_path, "r") as file:
-                current_content = file.read()
-
-            last_blob_hash = last_commit_blob.binsha.hex()
-            current_blob_hash = repo.hash_object(current_content.encode())
-            return last_blob_hash == current_blob_hash
-
-    return False
+    last_line_message_txt = get_last_line_files(file_path)
+    return content.strip() == last_line_message_txt.strip()
 
 
 def main():
+    # Initialiser le fichier "message.txt" s'il est vide ou inexistant
+    initialize_message_file()
+
     days_left = get_days_until_new_year()
     commit_message = f"Commit {get_number_days_year()-days_left+1}/{get_number_days_year()} : {days_left} days left"
 

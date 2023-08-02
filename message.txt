@@ -1,2 +1,0 @@
-Initialisation du fichier 'message.txt'.
-Commit 214/365 : 152 days left

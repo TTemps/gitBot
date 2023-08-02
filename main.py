@@ -35,14 +35,9 @@ def create_commit(commit_message):
     index.commit(commit_message)
 
     # Vérifier si le contenu du fichier est identique au dernier commit
-    if repo.is_dirty():
-        origin = repo.remote("origin")
-        origin.push()
-        print("Commit effectué avec succès!")
-    else:
-        print(
-            "AsAucune modification depuis le dernier commit. Le commit n'a pas été effectué."
-        )
+    origin = repo.remote("origin")
+    origin.push()
+    print("Commit effectué avec succès!")
 
 
 def add_commit_message_to_file(filename, commit_message):

@@ -1,28 +1,31 @@
-# GitBot - Commit quotidien jusqu'à la nouvelle année
+# Git Commit Automatique
 
-GitBot est un script Python qui effectue des commits Git automatiques tous les jours, en comptant le nombre de jours restant avant la nouvelle année. Chaque commit contient un message indiquant le nombre de jours restant avant la nouvelle année.
+Ce script Python vous permet de créer automatiquement des commits Git quotidiens avec des messages spécifiques en fonction du jour de l'année et d'autres critères. Il peut également ajouter des messages pour des jours spéciaux comme les fêtes.
 
-## Fonctionnement du script
+## Fonctionnalités
 
-Le script `gitBot.py` utilise la bibliothèque GitPython pour interagir avec le dépôt Git local. Il effectue les actions suivantes :
+- Crée des commits automatiques avec des messages spécifiques pour chaque jour de l'année.
+- Ajoute des messages pour des jours spéciaux tels que les fêtes.
+- Vérifie si le contenu du dernier commit est identique au nouveau message et évite de créer un commit inutile.
+- Initialise automatiquement le fichier 'message.txt' si nécessaire.
 
-1. Calcule le nombre de jours restant jusqu'à la nouvelle année.
-2. Crée un message de commit avec le nombre de jours restant.
-3. Ajoute les fichiers modifiés dans l'index pour le commit.
-4. Effectue un commit avec le message généré.
-5. Pousse les commits vers le dépôt distant spécifié.
+## Utilisation
 
-## Configuration requise
+1. Assurez-vous d'avoir Git installé sur votre système.
+2. Téléchargez le script `main.py` dans votre projet.
+3. Exécutez le script en utilisant la commande `python3 main.py`.
 
-Assurez-vous d'avoir les éléments suivants avant d'exécuter le script :
+Le script initialise automatiquement le fichier 'message.txt' si nécessaire, puis crée un commit avec le message approprié pour la journée en cours. Si le contenu du dernier commit est identique au nouveau message, aucun commit ne sera créé.
 
-1. Python 3.x installé sur votre système.
-2. Un dépôt Git local configuré avec votre nom d'utilisateur et votre adresse e-mail.
-3. Un dépôt Git distant (par exemple, sur GitHub) configuré comme origine (remote) pour le dépôt local.
+## Configuration
 
-## Installation
+- Modifiez la liste des jours fériés dans le script en ajoutant ou supprimant des entrées dans la liste `holidays`.
+- Vous pouvez personnaliser davantage le script en ajoutant d'autres conditions ou actions selon vos besoins.
 
-1. Clonez le dépôt GitBot sur votre système :
+## Auteur
 
-   ```bash
-   git clone https://github.com/TTemps/gitBot.git
+[Auteur du Projet]
+
+## Licence
+
+Ce projet est sous licence [MIT License](LICENSE).

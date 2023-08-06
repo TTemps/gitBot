@@ -24,8 +24,4 @@ Le script initialise automatiquement le fichier 'message.txt' si nécessaire, pu
 
 ## Auteur
 
-[Auteur du Projet]
-
-## Licence
-
-Ce projet est sous licence [MIT License](LICENSE).
+TTemps - Tristan Morel

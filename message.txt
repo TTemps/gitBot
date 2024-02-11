@@ -1,0 +1,15 @@
+Initialisation du fichier 'message.txt'.
+Commit 214/365 : 152 days left
+Commit 215/365 : 151 days left
+Commit 216/365 : 150 days left
+Commit 218/365 : 148 days left
+Commit 219/365 : 147 days left
+Commit 220/365 : 146 days left
+Commit 223/365 : 143 days left
+Commit 226/365 : 140 days left
+Commit 228/365 : 138 days left
+Commit 230/365 : 136 days left
+Commit 233/365 : 133 days left
+Commit 235/365 : 131 days left
+Commit 37/364 : 328 days left
+Commit 40/364 : 325 days left

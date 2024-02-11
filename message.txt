@@ -1,1 +1,2 @@
-
+Initialisation du fichier 'message.txt'.
+Commit 40/364 : 325 days left

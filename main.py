@@ -2,7 +2,10 @@ from git import Repo
 import os
 import datetime
 from io import BytesIO
+import logging
 
+logging.basicConfig(filename='log_commit.txt', level=logging.INFO, 
+                    format='%(asctime)s:%(levelname)s:%(message)s')
 # Liste des fêtes avec les messages correspondants
 holidays = [
     (datetime.date(datetime.date.today().year, 1, 1), " - Bonne année! 🎉"),
@@ -25,19 +28,17 @@ holidays = [
 
 
 def create_commit(commit_message):
-    repo = Repo(".")
-    index = repo.index
-    # Inclure tous les fichiers modifiés dans l'index
-    add_commit_message_to_file("message.txt", commit_message)
-    index.add(["message.txt"])
-
-    # Effectuer le commit avec le message de commit et les fichiers modifiés
-    index.commit(commit_message)
-
-    # Vérifier si le contenu du fichier est identique au dernier commit
-    origin = repo.remote("origin")
-    origin.push()
-    print("Commit effectué avec succès!")
+    try:
+        repo = Repo(".")
+        index = repo.index
+        add_commit_message_to_file("message.txt", commit_message)
+        index.add(["message.txt"])
+        index.commit(commit_message)
+        origin = repo.remote("origin")
+        origin.push()
+        logging.info("Commit effectué avec succès!")
+    except Exception as e:
+        logging.error(f"Erreur lors du commit : {e}")
 
 
 def add_commit_message_to_file(filename, commit_message):
@@ -74,25 +75,20 @@ def get_last_line_files(file_path):
 
 def initialize_message_file():
     initialized = False
-
     if not os.path.exists("message.txt"):
-        print("Initialisation du fichier 'message.txt'.")
+        logging.info("Initialisation du fichier 'message.txt'.")
         with open("message.txt", "w") as file:
             file.write("Initialisation du fichier 'message.txt'.\n")
         initialized = True
-
-    # Ajouter le message initial même si le fichier est vide
     with open("message.txt", "r") as file:
         content = file.read()
         if not content.strip() and not initialized:
-            print("Ajout du message initial dans 'message.txt'.")
+            logging.info("Ajout du message initial dans 'message.txt'.")
             with open("message.txt", "w") as file:
                 file.write("Initialisation du fichier 'message.txt'.\n")
-
     if initialized:
-        create_commit("Initialisation du fichier 'message.txt'.\n")
-
-
+        create_commit("Initialisation du fichier 'message.txt'.")
+        
 def is_file_content_identical(file_path, content):
     if not os.path.exists(".git"):
         return False
@@ -112,18 +108,16 @@ def main():
     for holiday_date, holiday_message in holidays:
         if datetime.date.today() == holiday_date:
             commit_message += holiday_message
-
-    print("Contenu actuel : " + commit_message)
+            
+    logging.info("Contenu actuel : " + commit_message)
     last_line_message_txt = get_last_line_files("message.txt")
-    print("Contenu du dernier commit : " + last_line_message_txt)
+    logging.info("Contenu du dernier commit : " + last_line_message_txt)
 
     # Vérifier si le contenu du fichier est identique au dernier commit
     if is_file_content_identical("message.txt", commit_message):
-        print(
-            "Aucune modification depuis le dernier commit. Le commit n'a pas été effectué."
-        )
+        logging.info("Aucun changement détecté, pas de commit effectué.")
     else:
-        print("Print avant commit : " + commit_message)
+        logging.info("Print avant commit : " + commit_message)
         create_commit(commit_message)
 
     return

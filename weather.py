@@ -78,6 +78,7 @@ def get_default_format_date(date): # expected format: 2024-02-13T08:02 in string
     except:
         logging.error("weather.py : La date n'a pas pu être formatée.")
         return "N/A"
+    return date
 def get_weather():
     position = get_lattitude_longitude()
     params = {
@@ -98,7 +99,6 @@ def get_weather():
         temperature = data['current']['temperature_2m']
         is_day_night = data['current']['is_day']
         weather_code = data['current']['weather_code']
-        
         # Préparation du DataFrame
         daily_data = {
             "sunrise": get_default_format_date(sunrise),
@@ -111,3 +111,5 @@ def get_weather():
         logging.error("weather.py : Les données météorologiques n'ont pas été récupérées.")
         daily_data = {"sunrise": "N/A", "sunset": "N/A", "temperature": "N/A", "is_day": "N/A", "weather_code": "N/A"}
     return daily_data
+
+weather = get_weather()

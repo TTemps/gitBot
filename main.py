@@ -3,6 +3,7 @@ import os
 import datetime
 from io import BytesIO
 import logging
+import weather
 
 logging.basicConfig(filename='log_commit.txt', level=logging.INFO, 
                     format='%(asctime)s:%(levelname)s:%(message)s')
@@ -36,7 +37,7 @@ def create_commit(commit_message):
         index.commit(commit_message)
         origin = repo.remote("origin")
         origin.push()
-        logging.info("Commit effectué avec succès!")
+        logging.info("Commit effectué avec succès!\n")
     except Exception as e:
         logging.error(f"Erreur lors du commit : {e}")
 
@@ -99,10 +100,21 @@ def is_file_content_identical(file_path, content):
     last_line_message_txt = get_last_line_files(file_path)
     return content.strip() == last_line_message_txt.strip()
 
-
-def main():
+def set_message():
     days_left = get_days_until_new_year()
-    commit_message = f"Commit {get_number_days_year()-days_left+1}/{get_number_days_year()} : {days_left} days left"
+    message = f"Commit {get_number_days_year()-days_left+1}/{get_number_days_year()} : {days_left} jours restants"
+    weather_data = weather.get_weather()
+    message += f"""Météo : 
+        Température{weather_data['temperature']} - 
+        Cycle : {weather_data['is_day']} - 
+        Temps :{weather_data['weather_code']} - 
+        Lever : {weather_data['sunrise']} - 
+        Coucher : {weather_data['sunset']}"""
+    return message
+ 
+def main():
+    
+    commit_message = set_message()
 
     # Vérifier si c'est l'une des fêtes spéciales
     for holiday_date, holiday_message in holidays:

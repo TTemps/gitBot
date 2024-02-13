@@ -104,12 +104,12 @@ def set_message():
     days_left = get_days_until_new_year()
     message = f"Commit {get_number_days_year()-days_left+1}/{get_number_days_year()} : {days_left} jours restants"
     weather_data = weather.get_weather()
-    message += f"""Météo : 
-        Température{weather_data['temperature']} - 
-        Cycle : {weather_data['is_day']} - 
-        Temps :{weather_data['weather_code']} - 
-        Lever : {weather_data['sunrise']} - 
-        Coucher : {weather_data['sunset']}"""
+    message += f"""\nMétéo : 
+        - Température{weather_data['temperature']} 
+        - Cycle : {weather_data['is_day']} - 
+        - Temps :{weather_data['weather_code']} - 
+        - Lever : {weather_data['sunrise']} - 
+        - Coucher : {weather_data['sunset']}\n"""
     return message
  
 def main():

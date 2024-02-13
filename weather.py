@@ -1,5 +1,9 @@
 import requests
 import geocoder
+import logging
+
+logging.basicConfig(filename='log_commit.txt', level=logging.INFO, 
+                    format='%(asctime)s:%(levelname)s:%(message)s')
 
 def weather_code_to_emoji(code):
     """
@@ -11,6 +15,11 @@ def weather_code_to_emoji(code):
     Returns:
     str: Corresponding emoji for the weather condition.
     """
+    try :
+        code = int(code)
+    except ValueError:
+        logging.error(f"weather.py : Le code météo '{code}' n'est pas un nombre entier.")
+        return "🤷‍♂️"
     if code == 0:
         return "☀️  Dégagés"  # Clear sky
     elif code in [1, 2, 3]:
@@ -37,28 +46,38 @@ def weather_code_to_emoji(code):
         return "⛈️  Orage"  # Thunderstorm: Slight or moderate
     elif code in [96, 99]:
         return "⛈️🌨️  Orage violent"  # Thunderstorm with slight and heavy hail
-    else:
-        return "🤷‍♂️"  # Unknown weather condition
     
 def is_day (is_day): 
+    try :
+        is_day = int(is_day)
+    except ValueError:
+        logging.error(f"weather.py : La valeur de 'is_day' n'est pas un nombre entier.")
+        return "N/A"
     if is_day == 1:
         return "Jour"
     else:
         return "Nuit"
 
 def get_lattitude_longitude():
-    g = geocoder.ip('me') # Get the current position of the script
+    try:
+        g = geocoder.ip('me') # Get the current position of the script
+    except:
+        logging.error("weather.py : Impossible de récupérer la position actuelle.")
+        return "N/A", "N/A", "N/A"
     latitude = g.latlng[0] # Get the latitude
     longitude = g.latlng[1] # Get the longitude
     city_name = g.city # Get the name of the city
     return latitude, longitude, city_name
 
 def get_default_format_date(date): # expected format: 2024-02-13T08:02 in string return format: 13/02/2024 08:02 in string
-    date = date.split("T")
-    heure = date[1].split(":") # heure[0] = heure, heure[1] = minute
-    date = date[0].split("-") # date[0] = année, date[1] = mois, date[2] = jour
-    date = date[2] + "/" + date[1] + "/" + date[0] + " " + heure[0] + ":" + heure[1]
-    return date
+    try :
+        date = date.split("T")
+        heure = date[1].split(":") # heure[0] = heure, heure[1] = minute
+        date = date[0].split("-") # date[0] = année, date[1] = mois, date[2] = jour
+        date = date[2] + "/" + date[1] + "/" + date[0] + " " + heure[0] + ":" + heure[1]
+    except:
+        logging.error("weather.py : La date n'a pas pu être formatée.")
+        return "N/A"
 def get_weather():
     position = get_lattitude_longitude()
     params = {
@@ -89,5 +108,6 @@ def get_weather():
             "weather_code": weather_code_to_emoji(weather_code)
         }
     else:
-        print("Données journalières non trouvées dans la réponse de l'API.")
+        logging.error("weather.py : Les données météorologiques n'ont pas été récupérées.")
+        daily_data = {"sunrise": "N/A", "sunset": "N/A", "temperature": "N/A", "is_day": "N/A", "weather_code": "N/A"}
     return daily_data

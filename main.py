@@ -155,10 +155,6 @@ def main():
     #last_line_message_txt = get_last_line_files("message.txt")
     last_line_message_txt = get_last_commit_content("message.txt")
     logging.info("Contenu du dernier commit : " + last_line_message_txt)
-    if is_file_content_identical("message.txt", commit_message):
-        print("Le contenu est identique au dernier commit. Aucun nouveau commit nécessaire.")
-    else:
-        print("Le contenu diffère. Procéder au commit.")
     # Vérifier si le contenu du fichier est identique au dernier commit
     if is_file_content_identical("message.txt", commit_message):
         logging.info("Aucun changement détecté, pas de commit effectué.")

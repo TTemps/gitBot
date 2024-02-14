@@ -39,8 +39,8 @@ python main.py
 
 ### Contribuer
 
-Si vous souhaitez contribuer à gitbotPerso, n'hésitez pas à forker le dépôt, créer une nouvelle branche pour vos modifications, et soumettre une pull request pour examen.
+Si vous souhaitez contribuer à GitBot, n'hésitez pas à forker le dépôt, créer une nouvelle branche pour vos modifications, et soumettre une pull request pour examen.
 
 ### Licence
 
-gitbotPerso est distribué sous la licence MIT, ce qui vous permet de l'utiliser librement dans vos projets personnels et commerciaux. Pour plus d'informations, consultez le fichier LICENSE.
+GitBot est distribué sous la licence MIT, ce qui vous permet de l'utiliser librement dans vos projets personnels et commerciaux. Pour plus d'informations, consultez le fichier LICENSE.

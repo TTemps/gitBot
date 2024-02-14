@@ -73,6 +73,36 @@ def get_last_line_files(file_path):
         last_line = f.readline().decode()
     return last_line
 
+def get_last_commit_content(file_path, num_lines=8):
+    """
+    Récupère le contenu des dernières lignes d'un fichier correspondant à un commit.
+    
+    Args:
+        file_path (str): Chemin du fichier à lire.
+        num_lines (int): Nombre de lignes à lire depuis la fin du fichier.
+        
+    Returns:
+        str: Le contenu des dernières lignes du fichier.
+    """
+    try:
+        with open(file_path, "r", encoding="utf-8") as file:
+            # Lire toutes les lignes du fichier et récupérer les dernières 'num_lines' lignes
+            lines = file.readlines()[-num_lines:]
+            return ''.join(lines).strip()  # Concaténer et nettoyer les lignes
+    except Exception as e:
+        print(f"Erreur lors de la lecture du fichier {file_path}: {e}")
+        return None
+
+def is_file_content_identical(file_path, content, num_lines=8):
+    if not os.path.exists(".git"):
+        return False
+    
+    repo = Repo(".")
+    last_commit_content = get_last_commit_content(file_path, num_lines)
+    
+    # Comparer le contenu prévu pour le commit avec le dernier contenu commité
+    return content.strip() == last_commit_content.strip()
+
 
 def initialize_message_file():
     initialized = False
@@ -90,25 +120,24 @@ def initialize_message_file():
     if initialized:
         create_commit("Initialisation du fichier 'message.txt'.")
         
-def is_file_content_identical(file_path, content):
-    if not os.path.exists(".git"):
-        return False
+# def is_file_content_identical(file_path, content):
+#     if not os.path.exists(".git"):
+#         return False
 
-    repo = Repo(".")
-    last_commit = repo.head.commit
-
-    last_line_message_txt = get_last_line_files(file_path)
-    return content.strip() == last_line_message_txt.strip()
+#     repo = Repo(".")
+#     last_commit = repo.head.commit
+#     last_line_message_txt = get_last_line_files(file_path)
+#     return content.strip() == last_line_message_txt.strip()
 
 def set_message():
     days_left = get_days_until_new_year()
     message = f"Commit {get_number_days_year()-days_left+1}/{get_number_days_year()} : {days_left} jours restants"
     weather_data = weather.get_weather()
     message += f"""\nMétéo : 
-        - Température{weather_data['temperature']} 
-        - Cycle : {weather_data['is_day']} - 
-        - Temps :{weather_data['weather_code']} - 
-        - Lever : {weather_data['sunrise']} - 
+        - Température {weather_data['temperature']} 
+        - Cycle : {weather_data['is_day']} 
+        - Temps :{weather_data['weather_code']}
+        - Lever : {weather_data['sunrise']}
         - Coucher : {weather_data['sunset']}\n"""
     return message
  
@@ -122,9 +151,14 @@ def main():
             commit_message += holiday_message
             
     logging.info("Contenu actuel : " + commit_message)
-    last_line_message_txt = get_last_line_files("message.txt")
+    #last_line_message_txt = get_last_line_files("message.txt")
+    last_line_message_txt = get_last_commit_content("message.txt")
+    print(last_line_message_txt)
     logging.info("Contenu du dernier commit : " + last_line_message_txt)
-
+    if is_file_content_identical("message.txt", last_line_message_txt):
+        print("Le contenu est identique au dernier commit. Aucun nouveau commit nécessaire.")
+    else:
+        print("Le contenu diffère. Procéder au commit.")
     # Vérifier si le contenu du fichier est identique au dernier commit
     if is_file_content_identical("message.txt", commit_message):
         logging.info("Aucun changement détecté, pas de commit effectué.")

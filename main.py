@@ -99,7 +99,8 @@ def is_file_content_identical(file_path, content, num_lines=8):
     
     repo = Repo(".")
     last_commit_content = get_last_commit_content(file_path, num_lines)
-    
+    print(last_commit_content)
+    print(content)
     # Comparer le contenu prévu pour le commit avec le dernier contenu commité
     return content.strip() == last_commit_content.strip()
 
@@ -153,9 +154,8 @@ def main():
     logging.info("Contenu actuel : " + commit_message)
     #last_line_message_txt = get_last_line_files("message.txt")
     last_line_message_txt = get_last_commit_content("message.txt")
-    print(last_line_message_txt)
     logging.info("Contenu du dernier commit : " + last_line_message_txt)
-    if is_file_content_identical("message.txt", last_line_message_txt):
+    if is_file_content_identical("message.txt", commit_message):
         print("Le contenu est identique au dernier commit. Aucun nouveau commit nécessaire.")
     else:
         print("Le contenu diffère. Procéder au commit.")

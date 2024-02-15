@@ -1,2 +1,4 @@
 log_commit.txt
 /log_commit.txt
+__pycache__/
+log_commit.txt

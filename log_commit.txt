@@ -20,3 +20,31 @@ MÃ©tÃ©o :
 
 2024-02-14 22:44:13,466:INFO:Commit effectuÃ© avec succÃ¨s!
 
+2024-02-15 22:58:25,523:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:00:24,372:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:02:08,635:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:03:22,734:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:04:24,568:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:04:24,868:INFO:Initialisation du fichier 'message.txt'.
+2024-02-15 23:04:31,792:INFO:Commit effectué avec succès!
+
+2024-02-15 23:04:31,924:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:04:32,225:INFO:Contenu actuel : Commit 44/364 : 321 jours restants
+Météo : 
+        - Température 14.4°C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dégagé 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:04:32,225:INFO:Contenu du dernier commit : Initialisation du fichier 'message.txt'.
+Initialisation du fichier 'message.txt'.
+2024-02-15 23:04:32,227:INFO:Print avant commit : Commit 44/364 : 321 jours restants
+Météo : 
+        - Température 14.4°C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dégagé 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:04:32,228:ERROR:Erreur lors du commit : 'charmap' codec can't encode characters in position 119-120: character maps to <undefined>

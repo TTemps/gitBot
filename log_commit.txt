@@ -48,3 +48,48 @@ Météo :
         - Coucher : 15/02/2024 18:13
 
 2024-02-15 23:04:32,228:ERROR:Erreur lors du commit : 'charmap' codec can't encode characters in position 119-120: character maps to <undefined>
+2024-02-15 23:06:37,944:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:06:38,262:INFO:Initialisation du fichier 'message.txt'.
+2024-02-15 23:06:39,814:INFO:Commit effectué avec succès!
+
+2024-02-15 23:06:39,945:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:06:40,279:INFO:Contenu actuel : Commit 44/364 : 321 jours restants
+Météo : 
+        - Température 14.4°C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dégagé 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:06:40,280:INFO:Contenu du dernier commit : Initialisation du fichier 'message.txt'.
+Initialisation du fichier 'message.txt'.
+2024-02-15 23:06:40,282:INFO:Print avant commit : Commit 44/364 : 321 jours restants
+Météo : 
+        - Température 14.4°C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dégagé 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:06:40,284:ERROR:Erreur lors du commit : 'charmap' codec can't encode characters in position 119-120: character maps to <undefined>
+2024-02-15 23:09:18,196:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:09:18,618:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:09:18,957:INFO:Contenu actuel : Commit 44/364 : 321 jours restants
+Météo : 
+        - Température 14.4°C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dégagé 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:09:18,957:INFO:Contenu du dernier commit : Initialisation du fichier 'message.txt'.
+Initialisation du fichier 'message.txt'.
+2024-02-15 23:09:18,958:INFO:Print avant commit : Commit 44/364 : 321 jours restants
+Météo : 
+        - Température 14.4°C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dégagé 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:09:18,959:ERROR:Erreur lors du commit : 'charmap' codec can't encode characters in position 119-120: character maps to <undefined>

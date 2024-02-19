@@ -66,18 +66,6 @@ def get_number_days_year():
     total_day = (last_day - first_day).days
     return total_day
 
-
-def get_last_line_files(file_path):
-    with open(file_path, "rb",encoding='utf-8') as f:
-        try:  # catch OSError in case of a one line file
-            f.seek(-2, os.SEEK_END)
-            while f.read(1) != b"\n":
-                f.seek(-2, os.SEEK_CUR)
-        except OSError:
-            f.seek(0)
-        last_line = f.readline().decode()
-    return last_line
-
 def get_last_commit_content(file_path, num_lines=8):
     """
     Récupère le contenu des dernières lignes d'un fichier correspondant à un commit.
@@ -101,7 +89,6 @@ def get_last_commit_content(file_path, num_lines=8):
 def is_file_content_identical(file_path, content, num_lines=8):
     if not os.path.exists(".git"):
         return False
-    
     repo = Repo(".")
     last_commit_content = get_last_commit_content(file_path, num_lines)
     print(last_commit_content)
@@ -113,7 +100,7 @@ def is_file_content_identical(file_path, content, num_lines=8):
 def initialize_message_file():
     initialized = False
     if not os.path.exists("message.txt"):
-        logging.info("Initialisation du fichier 'message.txt'.")
+        logging.info("Création du fichier 'message.txt'.")
         with open("message.txt", "w", encoding='utf-8') as file:
             file.write("Initialisation du fichier 'message.txt'.\n")
         initialized = True

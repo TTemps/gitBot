@@ -423,3 +423,25 @@ Météo :
 
 2024-02-19 23:25:15,384:INFO:Commit effectué avec succès!
 
+2024-02-19 23:26:59,286:INFO:Requested http://ipinfo.io/json
+2024-02-19 23:26:59,582:INFO:Ajout du message initial dans 'message.txt'.
+2024-02-19 23:26:59,705:INFO:Requested http://ipinfo.io/json
+2024-02-19 23:26:59,992:INFO:Contenu actuel : Commit 48/364 : 317 jours restants
+Météo : 
+        - Température 8.8°C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dégagé 
+        - Lever : 19/02/2024 07:58
+        - Coucher : 19/02/2024 18:20
+
+2024-02-19 23:26:59,993:INFO:Contenu du dernier commit : Initialisation du fichier 'message.txt'.
+2024-02-19 23:26:59,995:INFO:Print avant commit : Commit 48/364 : 317 jours restants
+Météo : 
+        - Température 8.8°C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dégagé 
+        - Lever : 19/02/2024 07:58
+        - Coucher : 19/02/2024 18:20
+
+2024-02-19 23:27:01,667:INFO:Commit effectué avec succès!
+

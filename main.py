@@ -5,8 +5,8 @@ from io import BytesIO
 import logging
 import weather
 
-logging.basicConfig(filename='log_commit.txt', level=logging.INFO, 
-                    format='%(asctime)s:%(levelname)s:%(message)s')
+logging.basicConfig(filename='log_commit.txt', level=logging.INFO, format='%(asctime)s:%(levelname)s:%(message)s', encoding='utf-8')
+
 # Liste des fêtes avec les messages correspondants
 holidays = [
     (datetime.date(datetime.date.today().year, 1, 1), " - Bonne année! 🎉"),
@@ -30,10 +30,15 @@ holidays = [
 
 def create_commit(commit_message):
     try:
+        try:
+            print("Commit message : ", commit_message)
+        except Exception as e:
+            print(f"Erreur lors de l'affichage du message de commit : {e}")
         repo = Repo(".")
         index = repo.index
         add_commit_message_to_file("message.txt", commit_message)
         index.add(["message.txt"])
+        
         index.commit(commit_message)
         origin = repo.remote("origin")
         origin.push()
@@ -43,7 +48,7 @@ def create_commit(commit_message):
 
 
 def add_commit_message_to_file(filename, commit_message):
-    with open(filename, "a") as file:
+    with open(filename, "a", encoding='utf-8') as file:
         file.write(f"{commit_message}\n")
 
 
@@ -63,7 +68,7 @@ def get_number_days_year():
 
 
 def get_last_line_files(file_path):
-    with open(file_path, "rb") as f:
+    with open(file_path, "rb",encoding='utf-8') as f:
         try:  # catch OSError in case of a one line file
             f.seek(-2, os.SEEK_END)
             while f.read(1) != b"\n":
@@ -109,14 +114,14 @@ def initialize_message_file():
     initialized = False
     if not os.path.exists("message.txt"):
         logging.info("Initialisation du fichier 'message.txt'.")
-        with open("message.txt", "w") as file:
+        with open("message.txt", "w", encoding='utf-8') as file:
             file.write("Initialisation du fichier 'message.txt'.\n")
         initialized = True
-    with open("message.txt", "r") as file:
+    with open("message.txt", "r", encoding='utf-8') as file:
         content = file.read()
         if not content.strip() and not initialized:
             logging.info("Ajout du message initial dans 'message.txt'.")
-            with open("message.txt", "w") as file:
+            with open("message.txt", "w", encoding='utf-8') as file:
                 file.write("Initialisation du fichier 'message.txt'.\n")
     if initialized:
         create_commit("Initialisation du fichier 'message.txt'.")

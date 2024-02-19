@@ -26,48 +26,48 @@ MÃ©tÃ©o :
 2024-02-15 23:03:22,734:INFO:Requested http://ipinfo.io/json
 2024-02-15 23:04:24,568:INFO:Requested http://ipinfo.io/json
 2024-02-15 23:04:24,868:INFO:Initialisation du fichier 'message.txt'.
-2024-02-15 23:04:31,792:INFO:Commit effectué avec succès!
+2024-02-15 23:04:31,792:INFO:Commit effectuï¿½ avec succï¿½s!
 
 2024-02-15 23:04:31,924:INFO:Requested http://ipinfo.io/json
 2024-02-15 23:04:32,225:INFO:Contenu actuel : Commit 44/364 : 321 jours restants
-Météo : 
-        - Température 14.4°C 
+Mï¿½tï¿½o : 
+        - Tempï¿½rature 14.4ï¿½C 
         - Cycle : Nuit 
-        - Temps :\U0001f324\ufe0f  Partiellement dégagé 
+        - Temps :\U0001f324\ufe0f  Partiellement dï¿½gagï¿½ 
         - Lever : 15/02/2024 08:05
         - Coucher : 15/02/2024 18:13
 
 2024-02-15 23:04:32,225:INFO:Contenu du dernier commit : Initialisation du fichier 'message.txt'.
 Initialisation du fichier 'message.txt'.
 2024-02-15 23:04:32,227:INFO:Print avant commit : Commit 44/364 : 321 jours restants
-Météo : 
-        - Température 14.4°C 
+Mï¿½tï¿½o : 
+        - Tempï¿½rature 14.4ï¿½C 
         - Cycle : Nuit 
-        - Temps :\U0001f324\ufe0f  Partiellement dégagé 
+        - Temps :\U0001f324\ufe0f  Partiellement dï¿½gagï¿½ 
         - Lever : 15/02/2024 08:05
         - Coucher : 15/02/2024 18:13
 
 2024-02-15 23:04:32,228:ERROR:Erreur lors du commit : 'charmap' codec can't encode characters in position 119-120: character maps to <undefined>
 2024-02-15 23:06:37,944:INFO:Requested http://ipinfo.io/json
 2024-02-15 23:06:38,262:INFO:Initialisation du fichier 'message.txt'.
-2024-02-15 23:06:39,814:INFO:Commit effectué avec succès!
+2024-02-15 23:06:39,814:INFO:Commit effectuï¿½ avec succï¿½s!
 
 2024-02-15 23:06:39,945:INFO:Requested http://ipinfo.io/json
 2024-02-15 23:06:40,279:INFO:Contenu actuel : Commit 44/364 : 321 jours restants
-Météo : 
-        - Température 14.4°C 
+Mï¿½tï¿½o : 
+        - Tempï¿½rature 14.4ï¿½C 
         - Cycle : Nuit 
-        - Temps :\U0001f324\ufe0f  Partiellement dégagé 
+        - Temps :\U0001f324\ufe0f  Partiellement dï¿½gagï¿½ 
         - Lever : 15/02/2024 08:05
         - Coucher : 15/02/2024 18:13
 
 2024-02-15 23:06:40,280:INFO:Contenu du dernier commit : Initialisation du fichier 'message.txt'.
 Initialisation du fichier 'message.txt'.
 2024-02-15 23:06:40,282:INFO:Print avant commit : Commit 44/364 : 321 jours restants
-Météo : 
-        - Température 14.4°C 
+Mï¿½tï¿½o : 
+        - Tempï¿½rature 14.4ï¿½C 
         - Cycle : Nuit 
-        - Temps :\U0001f324\ufe0f  Partiellement dégagé 
+        - Temps :\U0001f324\ufe0f  Partiellement dï¿½gagï¿½ 
         - Lever : 15/02/2024 08:05
         - Coucher : 15/02/2024 18:13
 
@@ -75,21 +75,326 @@ Météo :
 2024-02-15 23:09:18,196:INFO:Requested http://ipinfo.io/json
 2024-02-15 23:09:18,618:INFO:Requested http://ipinfo.io/json
 2024-02-15 23:09:18,957:INFO:Contenu actuel : Commit 44/364 : 321 jours restants
-Météo : 
-        - Température 14.4°C 
+Mï¿½tï¿½o : 
+        - Tempï¿½rature 14.4ï¿½C 
         - Cycle : Nuit 
-        - Temps :\U0001f324\ufe0f  Partiellement dégagé 
+        - Temps :\U0001f324\ufe0f  Partiellement dï¿½gagï¿½ 
         - Lever : 15/02/2024 08:05
         - Coucher : 15/02/2024 18:13
 
 2024-02-15 23:09:18,957:INFO:Contenu du dernier commit : Initialisation du fichier 'message.txt'.
 Initialisation du fichier 'message.txt'.
 2024-02-15 23:09:18,958:INFO:Print avant commit : Commit 44/364 : 321 jours restants
+Mï¿½tï¿½o : 
+        - Tempï¿½rature 14.4ï¿½C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dï¿½gagï¿½ 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:09:18,959:ERROR:Erreur lors du commit : 'charmap' codec can't encode characters in position 119-120: character maps to <undefined>
+2024-02-15 23:10:24,035:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:10:24,335:INFO:Ajout du message initial dans 'message.txt'.
+2024-02-15 23:10:24,461:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:10:24,796:INFO:Contenu actuel : Commit 44/364 : 321 jours restants
+Mï¿½tï¿½o : 
+        - Tempï¿½rature 14.4ï¿½C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dï¿½gagï¿½ 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:10:24,797:INFO:Contenu du dernier commit : Initialisation du fichier 'message.txt'.
+2024-02-15 23:10:24,800:INFO:Print avant commit : Commit 44/364 : 321 jours restants
+Mï¿½tï¿½o : 
+        - Tempï¿½rature 14.4ï¿½C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dï¿½gagï¿½ 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:10:24,802:ERROR:Erreur lors du commit : 'charmap' codec can't encode characters in position 119-120: character maps to <undefined>
+2024-02-15 23:12:56,641:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:13:35,804:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:13:55,755:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:13:56,194:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:13:56,512:INFO:Contenu actuel : Commit 44/364 : 321 jours restants
+Mï¿½tï¿½o : 
+        - Tempï¿½rature 14.4ï¿½C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dï¿½gagï¿½ 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:13:56,563:INFO:Contenu du dernier commit : Initialisation du fichier 'message.txt'.
+2024-02-15 23:13:56,566:INFO:Print avant commit : Commit 44/364 : 321 jours restants
+Mï¿½tï¿½o : 
+        - Tempï¿½rature 14.4ï¿½C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dï¿½gagï¿½ 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:13:56,567:ERROR:Erreur lors du commit : 'charmap' codec can't encode characters in position 119-120: character maps to <undefined>
+2024-02-15 23:16:40,518:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:16:40,947:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:16:41,273:INFO:Contenu actuel : Commit 44/364 : 321 jours restants
+Mï¿½tï¿½o : 
+        - Tempï¿½rature 14.2ï¿½C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dï¿½gagï¿½ 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:16:41,273:INFO:Contenu du dernier commit : Initialisation du fichier 'message.txt'.
+2024-02-15 23:16:41,276:INFO:Print avant commit : Commit 44/364 : 321 jours restants
+Mï¿½tï¿½o : 
+        - Tempï¿½rature 14.2ï¿½C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dï¿½gagï¿½ 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:16:41,278:ERROR:Erreur lors du commit : 'charmap' codec can't encode characters in position 119-120: character maps to <undefined>
+2024-02-15 23:17:01,279:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:17:01,715:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:17:02,012:INFO:Contenu actuel : Commit 44/364 : 321 jours restants
+Mï¿½tï¿½o : 
+        - Tempï¿½rature 14.2ï¿½C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dï¿½gagï¿½ 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:17:02,012:INFO:Contenu du dernier commit : Initialisation du fichier 'message.txt'.
+2024-02-15 23:17:02,016:INFO:Print avant commit : Commit 44/364 : 321 jours restants
+Mï¿½tï¿½o : 
+        - Tempï¿½rature 14.2ï¿½C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dï¿½gagï¿½ 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:17:02,017:ERROR:Erreur lors du commit : 'charmap' codec can't encode characters in position 119-120: character maps to <undefined>
+2024-02-15 23:17:42,079:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:17:42,530:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:17:42,833:INFO:Contenu actuel : Commit 44/364 : 321 jours restants
+Mï¿½tï¿½o : 
+        - Tempï¿½rature 14.2ï¿½C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dï¿½gagï¿½ 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:17:42,846:INFO:Contenu du dernier commit : Initialisation du fichier 'message.txt'.
+2024-02-15 23:17:42,848:INFO:Print avant commit : Commit 44/364 : 321 jours restants
+Mï¿½tï¿½o : 
+        - Tempï¿½rature 14.2ï¿½C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dï¿½gagï¿½ 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:17:42,850:ERROR:Erreur lors du commit : 'charmap' codec can't encode characters in position 119-120: character maps to <undefined>
+2024-02-15 23:18:02,270:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:18:02,701:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:18:03,019:INFO:Contenu actuel : Commit 44/364 : 321 jours restants
+Mï¿½tï¿½o : 
+        - Tempï¿½rature 14.2ï¿½C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dï¿½gagï¿½ 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:18:03,020:INFO:Contenu du dernier commit : Initialisation du fichier 'message.txt'.
+2024-02-15 23:18:03,022:INFO:Print avant commit : Commit 44/364 : 321 jours restants
+Mï¿½tï¿½o : 
+        - Tempï¿½rature 14.2ï¿½C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dï¿½gagï¿½ 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:18:03,024:ERROR:Erreur lors du commit : 'charmap' codec can't encode characters in position 119-120: character maps to <undefined>
+2024-02-15 23:18:12,315:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:18:12,758:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:18:13,059:INFO:Contenu actuel : Commit 44/364 : 321 jours restants
+Mï¿½tï¿½o : 
+        - Tempï¿½rature 14.2ï¿½C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dï¿½gagï¿½ 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:18:13,059:INFO:Contenu du dernier commit : Initialisation du fichier 'message.txt'.
+2024-02-15 23:18:13,062:INFO:Print avant commit : Commit 44/364 : 321 jours restants
+Mï¿½tï¿½o : 
+        - Tempï¿½rature 14.2ï¿½C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dï¿½gagï¿½ 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:18:13,066:ERROR:Erreur lors du commit : 'charmap' codec can't encode characters in position 119-120: character maps to <undefined>
+2024-02-15 23:21:18,456:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:21:29,275:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:21:29,724:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:21:30,037:INFO:Contenu actuel : Commit 44/364 : 321 jours restants
+Mï¿½tï¿½o : 
+        - Tempï¿½rature 14.2ï¿½C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dï¿½gagï¿½ 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:21:30,038:INFO:Contenu du dernier commit : Initialisation du fichier 'message.txt'.
+2024-02-15 23:21:30,040:INFO:Print avant commit : Commit 44/364 : 321 jours restants
+Mï¿½tï¿½o : 
+        - Tempï¿½rature 14.2ï¿½C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dï¿½gagï¿½ 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:21:30,042:ERROR:Erreur lors du commit : 'charmap' codec can't encode characters in position 119-120: character maps to <undefined>
+2024-02-15 23:22:55,592:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:22:56,022:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:22:56,324:INFO:Contenu actuel : Commit 44/364 : 321 jours restants
+Mï¿½tï¿½o : 
+        - Tempï¿½rature 14.2ï¿½C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dï¿½gagï¿½ 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:22:56,508:INFO:Contenu du dernier commit : Initialisation du fichier 'message.txt'.
+2024-02-15 23:22:56,511:INFO:Print avant commit : Commit 44/364 : 321 jours restants
+Mï¿½tï¿½o : 
+        - Tempï¿½rature 14.2ï¿½C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dï¿½gagï¿½ 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:22:56,513:ERROR:Erreur lors du commit : 'charmap' codec can't encode characters in position 119-120: character maps to <undefined>
+2024-02-15 23:23:15,227:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:23:15,673:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:23:15,972:INFO:Contenu actuel : Commit 44/364 : 321 jours restants
 Météo : 
-        - Température 14.4°C 
+        - Température 14.2°C 
         - Cycle : Nuit 
         - Temps :\U0001f324\ufe0f  Partiellement dégagé 
         - Lever : 15/02/2024 08:05
         - Coucher : 15/02/2024 18:13
 
-2024-02-15 23:09:18,959:ERROR:Erreur lors du commit : 'charmap' codec can't encode characters in position 119-120: character maps to <undefined>
+2024-02-15 23:23:15,972:INFO:Contenu du dernier commit : Initialisation du fichier 'message.txt'.
+2024-02-15 23:23:15,975:INFO:Print avant commit : Commit 44/364 : 321 jours restants
+Météo : 
+        - Température 14.2°C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dégagé 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:23:15,977:ERROR:Erreur lors du commit : 'charmap' codec can't encode characters in position 119-120: character maps to <undefined>
+2024-02-15 23:23:42,355:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:23:42,816:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:23:43,128:INFO:Contenu actuel : Commit 44/364 : 321 jours restants
+Météo : 
+        - Température 14.9°C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dégagé 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:23:43,128:INFO:Contenu du dernier commit : Initialisation du fichier 'message.txt'.
+2024-02-15 23:23:43,131:INFO:Print avant commit : Commit 44/364 : 321 jours restants
+Météo : 
+        - Température 14.9°C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dégagé 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:23:43,134:ERROR:Erreur lors du commit : 'charmap' codec can't encode characters in position 119-120: character maps to <undefined>
+2024-02-15 23:24:13,558:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:24:14,002:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:24:14,307:INFO:Contenu actuel : Commit 44/364 : 321 jours restants
+Météo : 
+        - Température 14.9°C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dégagé 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:24:14,307:INFO:Contenu du dernier commit : Initialisation du fichier 'message.txt'.
+2024-02-15 23:24:14,310:INFO:Print avant commit : Commit 44/364 : 321 jours restants
+Météo : 
+        - Température 14.9°C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dégagé 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:24:14,312:ERROR:Erreur lors du commit : 'charmap' codec can't encode characters in position 119-120: character maps to <undefined>
+2024-02-15 23:25:56,292:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:25:56,736:INFO:Requested http://ipinfo.io/json
+2024-02-15 23:25:57,056:INFO:Contenu actuel : Commit 44/364 : 321 jours restants
+Météo : 
+        - Température 14.9°C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dégagé 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:25:57,057:INFO:Contenu du dernier commit : Initialisation du fichier 'message.txt'.
+2024-02-15 23:25:57,059:INFO:Print avant commit : Commit 44/364 : 321 jours restants
+Météo : 
+        - Température 14.9°C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dégagé 
+        - Lever : 15/02/2024 08:05
+        - Coucher : 15/02/2024 18:13
+
+2024-02-15 23:25:57,061:ERROR:Erreur lors du commit : 'charmap' codec can't encode characters in position 119-120: character maps to <undefined>
+2024-02-19 23:12:22,429:INFO:Requested http://ipinfo.io/json
+2024-02-19 23:12:22,895:INFO:Requested http://ipinfo.io/json
+2024-02-19 23:12:23,211:INFO:Contenu actuel : Commit 48/364 : 317 jours restants
+Météo : 
+        - Température 9.1°C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dégagé 
+        - Lever : 19/02/2024 07:58
+        - Coucher : 19/02/2024 18:20
+
+2024-02-19 23:12:23,211:INFO:Contenu du dernier commit : Initialisation du fichier 'message.txt'.
+2024-02-19 23:12:23,216:INFO:Print avant commit : Commit 48/364 : 317 jours restants
+Météo : 
+        - Température 9.1°C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dégagé 
+        - Lever : 19/02/2024 07:58
+        - Coucher : 19/02/2024 18:20
+
+2024-02-19 23:12:23,217:ERROR:Erreur lors du commit : 'charmap' codec can't encode characters in position 118-119: character maps to <undefined>
+2024-02-19 23:16:00,483:INFO:Requested http://ipinfo.io/json
+2024-02-19 23:16:00,911:INFO:Requested http://ipinfo.io/json
+2024-02-19 23:16:01,205:INFO:Contenu actuel : Commit 48/364 : 317 jours restants
+Météo : 
+        - Température 9.0°C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dégagé 
+        - Lever : 19/02/2024 07:58
+        - Coucher : 19/02/2024 18:20
+
+2024-02-19 23:16:01,206:INFO:Contenu du dernier commit : Initialisation du fichier 'message.txt'.
+2024-02-19 23:16:01,208:INFO:Print avant commit : Commit 48/364 : 317 jours restants
+Météo : 
+        - Température 9.0°C 
+        - Cycle : Nuit 
+        - Temps :\U0001f324\ufe0f  Partiellement dégagé 
+        - Lever : 19/02/2024 07:58
+        - Coucher : 19/02/2024 18:20
+
+2024-02-19 23:16:03,329:INFO:Commit effectué avec succès!
+

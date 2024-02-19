@@ -19,7 +19,7 @@ def weather_code_to_emoji(code):
         code = int(code)
     except ValueError:
         logging.error(f"weather.py : Le code météo '{code}' n'est pas un nombre entier.")
-        return "🤷‍♂️"
+        return "🤷"
     if code == 0:
         return "☀️  Dégagés"  # Clear sky
     elif code in [1, 2, 3]:
@@ -35,7 +35,7 @@ def weather_code_to_emoji(code):
     elif code in [66, 67]:
         return "❄️🌧️  Pluie verglacente"  # Freezing Rain: Light and heavy intensity
     elif code in [71, 73, 75]:
-        return "❄️  Neige"  # Snow fall: Slight, moderate, and heavy intensity
+        return "❄️  Neige"  # Snowfall: Slight, moderate, and heavy intensity
     elif code == 77:
         return "❄️  Neige abondante"  # Snow grains
     elif code in [80, 81, 82]:
@@ -46,6 +46,7 @@ def weather_code_to_emoji(code):
         return "⛈️  Orage"  # Thunderstorm: Slight or moderate
     elif code in [96, 99]:
         return "⛈️🌨️  Orage violent"  # Thunderstorm with slight and heavy hail
+
     
 def is_day (is_day): 
     try :

@@ -1,0 +1,2 @@
+Initialisation du fichier 'message.txt'.
+Initialisation du fichier 'message.txt'.

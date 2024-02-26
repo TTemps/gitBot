@@ -445,3 +445,297 @@ M�t�o :
 
 2024-02-19 23:27:01,667:INFO:Commit effectu� avec succ�s!
 
+2024-02-20 07:50:10,949:INFO:Requested http://ipinfo.io/json
+2024-02-20 07:50:11,397:INFO:Requested http://ipinfo.io/json
+2024-02-20 07:50:11,743:INFO:Contenu actuel : Commit 49/364 : 316 jours restants
+Météo : 
+        - Température 7.4°C 
+        - Cycle : Nuit 
+        - Temps :🌤️  Partiellement dégagé 
+        - Lever : 20/02/2024 07:56
+        - Coucher : 20/02/2024 18:22
+
+2024-02-20 07:50:11,744:INFO:Contenu du dernier commit : Commit 48/364 : 317 jours restants
+Météo : 
+        - Température 8.7°C 
+        - Cycle : Nuit 
+        - Temps :🌤️  Partiellement dégagé 
+        - Lever : 19/02/2024 07:58
+        - Coucher : 19/02/2024 18:20
+2024-02-20 07:50:11,745:INFO:Print avant commit : Commit 49/364 : 316 jours restants
+Météo : 
+        - Température 7.4°C 
+        - Cycle : Nuit 
+        - Temps :🌤️  Partiellement dégagé 
+        - Lever : 20/02/2024 07:56
+        - Coucher : 20/02/2024 18:22
+
+2024-02-20 07:50:13,378:INFO:Commit effectué avec succès!
+
+2024-02-20 17:29:19,504:INFO:Requested http://ipinfo.io/json
+2024-02-20 17:29:19,989:INFO:Requested http://ipinfo.io/json
+2024-02-20 17:29:20,254:INFO:Contenu actuel : Commit 49/364 : 316 jours restants
+Météo : 
+        - Température 11.9°C 
+        - Cycle : Jour 
+        - Temps :🌤️  Partiellement dégagé 
+        - Lever : 20/02/2024 07:56
+        - Coucher : 20/02/2024 18:22
+
+2024-02-20 17:29:20,254:INFO:Contenu du dernier commit : Commit 49/364 : 316 jours restants
+Météo : 
+        - Température 7.4°C 
+        - Cycle : Nuit 
+        - Temps :🌤️  Partiellement dégagé 
+        - Lever : 20/02/2024 07:56
+        - Coucher : 20/02/2024 18:22
+2024-02-20 17:29:20,317:INFO:Print avant commit : Commit 49/364 : 316 jours restants
+Météo : 
+        - Température 11.9°C 
+        - Cycle : Jour 
+        - Temps :🌤️  Partiellement dégagé 
+        - Lever : 20/02/2024 07:56
+        - Coucher : 20/02/2024 18:22
+
+2024-02-20 17:29:22,677:ERROR:Erreur lors du commit : Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain -- origin
+  stderr: 'fatal: Unable to persist credentials with the 'wincredman' credential store.
+error: failed to execute prompt script (exit code 1)
+fatal: could not read Username for 'https://github.com': No such file or directory'
+2024-02-21 07:17:57,094:INFO:Requested http://ipinfo.io/json
+2024-02-21 07:17:57,625:INFO:Requested http://ipinfo.io/json
+2024-02-21 07:17:57,907:INFO:Contenu actuel : Commit 50/364 : 315 jours restants
+Météo : 
+        - Température 8.8°C 
+        - Cycle : Nuit 
+        - Temps :🌧️  Pluie modère 
+        - Lever : 21/02/2024 07:54
+        - Coucher : 21/02/2024 18:23
+
+2024-02-21 07:17:57,922:INFO:Contenu du dernier commit : Commit 49/364 : 316 jours restants
+Météo : 
+        - Température 11.9°C 
+        - Cycle : Jour 
+        - Temps :🌤️  Partiellement dégagé 
+        - Lever : 20/02/2024 07:56
+        - Coucher : 20/02/2024 18:22
+2024-02-21 07:17:57,938:INFO:Print avant commit : Commit 50/364 : 315 jours restants
+Météo : 
+        - Température 8.8°C 
+        - Cycle : Nuit 
+        - Temps :🌧️  Pluie modère 
+        - Lever : 21/02/2024 07:54
+        - Coucher : 21/02/2024 18:23
+
+2024-02-21 07:17:59,579:ERROR:Erreur lors du commit : Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain -- origin
+  stderr: 'fatal: Unable to persist credentials with the 'wincredman' credential store.
+error: failed to execute prompt script (exit code 1)
+fatal: could not read Username for 'https://github.com': No such file or directory'
+2024-02-21 17:46:54,897:INFO:Requested http://ipinfo.io/json
+2024-02-21 17:46:55,443:INFO:Requested http://ipinfo.io/json
+2024-02-21 17:46:55,709:INFO:Contenu actuel : Commit 50/364 : 315 jours restants
+Météo : 
+        - Température 10.8°C 
+        - Cycle : Jour 
+        - Temps :🌧️  Pluie modère 
+        - Lever : 21/02/2024 07:54
+        - Coucher : 21/02/2024 18:23
+
+2024-02-21 17:46:55,709:INFO:Contenu du dernier commit : Commit 50/364 : 315 jours restants
+Météo : 
+        - Température 8.8°C 
+        - Cycle : Nuit 
+        - Temps :🌧️  Pluie modère 
+        - Lever : 21/02/2024 07:54
+        - Coucher : 21/02/2024 18:23
+2024-02-21 17:46:55,740:INFO:Print avant commit : Commit 50/364 : 315 jours restants
+Météo : 
+        - Température 10.8°C 
+        - Cycle : Jour 
+        - Temps :🌧️  Pluie modère 
+        - Lever : 21/02/2024 07:54
+        - Coucher : 21/02/2024 18:23
+
+2024-02-21 17:46:58,242:ERROR:Erreur lors du commit : Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain -- origin
+  stderr: 'fatal: Unable to persist credentials with the 'wincredman' credential store.
+error: failed to execute prompt script (exit code 1)
+fatal: could not read Username for 'https://github.com': No such file or directory'
+2024-02-22 20:09:58,259:INFO:Requested http://ipinfo.io/json
+2024-02-22 20:09:58,884:INFO:Requested http://ipinfo.io/json
+2024-02-22 20:09:59,165:INFO:Contenu actuel : Commit 51/364 : 314 jours restants
+Météo : 
+        - Température 7.2°C 
+        - Cycle : Nuit 
+        - Temps :🌧️🌦️  Pluie modéré
+        - Lever : 22/02/2024 07:52
+        - Coucher : 22/02/2024 18:25
+
+2024-02-22 20:09:59,165:INFO:Contenu du dernier commit : Commit 50/364 : 315 jours restants
+Météo : 
+        - Température 10.8°C 
+        - Cycle : Jour 
+        - Temps :🌧️  Pluie modère 
+        - Lever : 21/02/2024 07:54
+        - Coucher : 21/02/2024 18:23
+2024-02-22 20:09:59,165:INFO:Print avant commit : Commit 51/364 : 314 jours restants
+Météo : 
+        - Température 7.2°C 
+        - Cycle : Nuit 
+        - Temps :🌧️🌦️  Pluie modéré
+        - Lever : 22/02/2024 07:52
+        - Coucher : 22/02/2024 18:25
+
+2024-02-22 20:10:00,775:ERROR:Erreur lors du commit : Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain -- origin
+  stderr: 'fatal: Unable to persist credentials with the 'wincredman' credential store.
+error: failed to execute prompt script (exit code 1)
+fatal: could not read Username for 'https://github.com': No such file or directory'
+2024-02-23 17:21:08,982:INFO:Requested http://ipinfo.io/json
+2024-02-23 17:21:09,560:INFO:Requested http://ipinfo.io/json
+2024-02-23 17:21:09,841:INFO:Contenu actuel : Commit 52/364 : 313 jours restants
+Météo : 
+        - Température 7.8°C 
+        - Cycle : Jour 
+        - Temps :🌧️  Pluie modère 
+        - Lever : 23/02/2024 07:50
+        - Coucher : 23/02/2024 18:27
+
+2024-02-23 17:21:09,841:INFO:Contenu du dernier commit : Commit 51/364 : 314 jours restants
+Météo : 
+        - Température 7.2°C 
+        - Cycle : Nuit 
+        - Temps :🌧️🌦️  Pluie modéré
+        - Lever : 22/02/2024 07:52
+        - Coucher : 22/02/2024 18:25
+2024-02-23 17:21:09,841:INFO:Print avant commit : Commit 52/364 : 313 jours restants
+Météo : 
+        - Température 7.8°C 
+        - Cycle : Jour 
+        - Temps :🌧️  Pluie modère 
+        - Lever : 23/02/2024 07:50
+        - Coucher : 23/02/2024 18:27
+
+2024-02-23 17:21:11,482:ERROR:Erreur lors du commit : Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain -- origin
+  stderr: 'fatal: Unable to persist credentials with the 'wincredman' credential store.
+error: failed to execute prompt script (exit code 1)
+fatal: could not read Username for 'https://github.com': No such file or directory'
+2024-02-24 11:12:11,646:INFO:Requested http://ipinfo.io/json
+2024-02-24 11:12:12,146:INFO:Requested http://ipinfo.io/json
+2024-02-24 11:12:12,444:INFO:Contenu actuel : Commit 53/364 : 312 jours restants
+Météo : 
+        - Température 5.8°C 
+        - Cycle : Jour 
+        - Temps :🌤️  Partiellement dégagé 
+        - Lever : 24/02/2024 07:48
+        - Coucher : 24/02/2024 18:28
+
+2024-02-24 11:12:12,444:INFO:Contenu du dernier commit : Commit 52/364 : 313 jours restants
+Météo : 
+        - Température 7.8°C 
+        - Cycle : Jour 
+        - Temps :🌧️  Pluie modère 
+        - Lever : 23/02/2024 07:50
+        - Coucher : 23/02/2024 18:27
+2024-02-24 11:12:12,459:INFO:Print avant commit : Commit 53/364 : 312 jours restants
+Météo : 
+        - Température 5.8°C 
+        - Cycle : Jour 
+        - Temps :🌤️  Partiellement dégagé 
+        - Lever : 24/02/2024 07:48
+        - Coucher : 24/02/2024 18:28
+
+2024-02-24 11:12:15,960:ERROR:Erreur lors du commit : Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain -- origin
+  stderr: 'fatal: Unable to persist credentials with the 'wincredman' credential store.
+error: failed to execute prompt script (exit code 1)
+fatal: could not read Username for 'https://github.com': No such file or directory'
+2024-02-25 18:45:41,473:INFO:Requested http://ipinfo.io/json
+2024-02-25 18:45:42,098:INFO:Requested http://ipinfo.io/json
+2024-02-25 18:45:42,379:INFO:Contenu actuel : Commit 54/364 : 311 jours restants
+Météo : 
+        - Température 7.7°C 
+        - Cycle : Nuit 
+        - Temps :🌧️  Pluie modère 
+        - Lever : 25/02/2024 07:47
+        - Coucher : 25/02/2024 18:30
+
+2024-02-25 18:45:42,379:INFO:Contenu du dernier commit : Commit 53/364 : 312 jours restants
+Météo : 
+        - Température 5.8°C 
+        - Cycle : Jour 
+        - Temps :🌤️  Partiellement dégagé 
+        - Lever : 24/02/2024 07:48
+        - Coucher : 24/02/2024 18:28
+2024-02-25 18:45:42,379:INFO:Print avant commit : Commit 54/364 : 311 jours restants
+Météo : 
+        - Température 7.7°C 
+        - Cycle : Nuit 
+        - Temps :🌧️  Pluie modère 
+        - Lever : 25/02/2024 07:47
+        - Coucher : 25/02/2024 18:30
+
+2024-02-25 18:45:45,114:ERROR:Erreur lors du commit : Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain -- origin
+  stderr: 'fatal: Unable to persist credentials with the 'wincredman' credential store.
+error: failed to execute prompt script (exit code 1)
+fatal: could not read Username for 'https://github.com': No such file or directory'
+2024-02-26 07:10:54,761:INFO:Requested http://ipinfo.io/json
+2024-02-26 07:10:55,339:INFO:Requested http://ipinfo.io/json
+2024-02-26 07:10:55,620:INFO:Contenu actuel : Commit 55/364 : 310 jours restants
+Météo : 
+        - Température 7.0°C 
+        - Cycle : Nuit 
+        - Temps :🌧️  Pluie modère 
+        - Lever : 26/02/2024 07:45
+        - Coucher : 26/02/2024 18:32
+
+2024-02-26 07:10:55,620:INFO:Contenu du dernier commit : Commit 54/364 : 311 jours restants
+Météo : 
+        - Température 7.7°C 
+        - Cycle : Nuit 
+        - Temps :🌧️  Pluie modère 
+        - Lever : 25/02/2024 07:47
+        - Coucher : 25/02/2024 18:30
+2024-02-26 07:10:55,636:INFO:Print avant commit : Commit 55/364 : 310 jours restants
+Météo : 
+        - Température 7.0°C 
+        - Cycle : Nuit 
+        - Temps :🌧️  Pluie modère 
+        - Lever : 26/02/2024 07:45
+        - Coucher : 26/02/2024 18:32
+
+2024-02-26 07:11:00,074:INFO:Commit effectué avec succès!
+
+2024-02-26 17:47:39,981:INFO:Requested http://ipinfo.io/json
+2024-02-26 17:47:40,512:INFO:Requested http://ipinfo.io/json
+2024-02-26 17:47:40,793:INFO:Contenu actuel : Commit 55/364 : 310 jours restants
+Météo : 
+        - Température 6.3°C 
+        - Cycle : Jour 
+        - Temps :🌧️  Pluie modère 
+        - Lever : 26/02/2024 07:45
+        - Coucher : 26/02/2024 18:32
+
+2024-02-26 17:47:40,793:INFO:Contenu du dernier commit : Commit 55/364 : 310 jours restants
+Météo : 
+        - Température 7.0°C 
+        - Cycle : Nuit 
+        - Temps :🌧️  Pluie modère 
+        - Lever : 26/02/2024 07:45
+        - Coucher : 26/02/2024 18:32
+2024-02-26 17:47:40,793:INFO:Print avant commit : Commit 55/364 : 310 jours restants
+Météo : 
+        - Température 6.3°C 
+        - Cycle : Jour 
+        - Temps :🌧️  Pluie modère 
+        - Lever : 26/02/2024 07:45
+        - Coucher : 26/02/2024 18:32
+
+2024-02-26 17:47:43,091:ERROR:Erreur lors du commit : Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain -- origin
+  stderr: 'fatal: Unable to persist credentials with the 'wincredman' credential store.
+error: failed to execute prompt script (exit code 1)
+fatal: could not read Username for 'https://github.com': No such file or directory'

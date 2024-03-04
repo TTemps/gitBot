@@ -112,3 +112,11 @@ Météo :
         - Coucher : 27/02/2024 18:33
 
 Commit 62/364 : 303 jours restants
+Commit 62/364 : 303 jours restants
+Météo : 
+        - Température 6.7°C 
+        - Cycle : Nuit 
+        - Temps :🌧️  Pluie modère 
+        - Lever : 04/03/2024 07:30
+        - Coucher : 04/03/2024 18:43
+

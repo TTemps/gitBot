@@ -20,23 +20,18 @@ holidays = [
     (datetime.date(datetime.date.today().year, 12, 25), " - Joyeux Noël! 🎄"),
 ]
 
-def create_commit(commit_message):
+def create_commit(commit_message, message):
     """
     Créer un commit avec le message spécifié
         commit_message: le message du commit
     """
     try:
-        try:
-            logging.info(f"Commit message : {commit_message}")
-        except Exception as e:
-            logging.error(f"Erreur lors de l'écriture du message de commit : {e}")
-            exit(1)
         repo = Repo(".")
         index = repo.index
-        add_commit_message_to_file("message.txt", commit_message) # Ajouter le message au fichier
+        add_commit_message_to_file("message.txt", commit_message + message) # Ajouter le message au fichier
         index.add(["message.txt"])
         #get the first list of the message.txt
-        index.commit(commit_message)
+        index.commit(commit_message) # Commit le message
         origin = repo.remote("origin")
         origin.push()
         logging.info("Commit effectué avec succès!\n")
@@ -131,6 +126,7 @@ def main():
     """
     Fonction principale
     """
+    commit_message, message = set_message()
     # Vérifier si c'est l'une des fêtes spéciales
     for holiday_date, holiday_message in holidays:
         if datetime.date.today() == holiday_date:
@@ -144,7 +140,7 @@ def main():
         logging.info("Aucun changement détecté, pas de commit effectué.")
     else:
         logging.info("Print avant commit : " + commit_message)
-        create_commit(commit_message)
+        create_commit(commit_message , message)
     return
 
 if __name__ == "__main__":

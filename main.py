@@ -135,7 +135,7 @@ def main():
     last_commit_message = get_last_commit_message()
     logging.info("Message du dernier commit : " + last_commit_message)
 
-    # Vérifier si le contenu du fichier est identique au dernier commit
+    # Vérifie si le contenu du fichier est identique au dernier commit
     if is_commit_content_identical(last_commit_message, commit_message):
         logging.info("Aucun changement détecté, pas de commit effectué.")
     else:

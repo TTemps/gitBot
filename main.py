@@ -144,5 +144,5 @@ def main():
     return
 
 if __name__ == "__main__":
-    initialize_message_file()  # Initialiser le fichier message.txt si nécessaire
+    initialize_message_file()  # Initialise le fichier message.txt si nécessaire
     main()  # Exécute le script principal

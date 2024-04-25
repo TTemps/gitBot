@@ -83,7 +83,7 @@ def initialize_message_file(): # Initialiser le fichier message.txt si nécessai
             with open("message.txt", "w", encoding='utf-8') as file:
                 file.write("Initialisation du fichier 'message.txt'.\n")
     if initialized:
-        create_commit("Initialisation du fichier 'message.txt'.")
+        create_commit("Initialisation du fichier 'message.txt'.", "")
         
 def set_message():
     """
